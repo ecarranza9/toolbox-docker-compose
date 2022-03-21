@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  toolbox-backend:
+    image: toolbox-backend
+    build:
+      context: toolbox-backend
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    networks:
+      - toolbox-app
+
+  toolbox-frontend:
+    image: toolbox-frontend
+    build:
+      context: toolbox-frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - toolbox-app
+    depends_on:
+      - toolbox-backend
+
+networks:
+  toolbox-app:
+    driver: bridge

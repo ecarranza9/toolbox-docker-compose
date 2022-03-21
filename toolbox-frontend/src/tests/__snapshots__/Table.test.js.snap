@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Component should match snapshot and styles 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+    style="margin-top: 20px;"
+  >
+    <select
+      aria-label="Select File"
+      class="form-select"
+      data-testid="select-files"
+      style="margin-bottom: 30px;"
+    >
+      <option
+        value="all"
+      >
+        All files data
+      </option>
+    </select>
+    <span>
+       Este archivo no tiene datos validos 
+    </span>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component should match snapshot 1`] = `
+<div
+  data-testid="navbar"
+>
+  <nav
+    class="navbar navbar-expand navbar-dark bg-dark"
+  >
+    <div
+      class="container"
+    >
+      <span
+        class="navbar-brand"
+      >
+        React Test APP
+      </span>
+    </div>
+  </nav>
+</div>
+`;
